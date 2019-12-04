@@ -8,7 +8,7 @@
       "iconClass": "icon-hdd",
       "openshift.io/display-name": "BC Gov Minio",
       "tags": "bcgov,pathfinder,minio,s3,objectstore",
-      "template.openshift.io/documentation-url": "https://github.com/BCDevOps/minio-openshift",
+      "template.openshift.io/documentation-url": "https://github.com/bcgov/eagle-minio-openshift",
       "template.openshift.io/long-description": "This template deploys a minio server within OpenShift, backed by persistent volume storage.",
       "template.openshift.io/provider-display-name": "Province of BC, Office of the Chief Information Officer, BC DevExchange and DevOps Branch"
     }
@@ -207,7 +207,7 @@
   "parameters": [
     {
       "name": "IMAGESTREAM_NAME",
-      "value": "minio",
+      "value": "eagle-minio",
       "required": true
     },
     {
@@ -217,13 +217,13 @@
     },
     {
       "name": "IMAGESTREAM_NAMESPACE",
-      "value": "openshift",
+      "value": "your-tools-project",
       "required": true
     },
     {
       "name": "NAME",
       "displayName": "Name to apply to objects in the template",
-      "value": "minio",
+      "value": "eagle-minio",
       "required": true
     },
     {
